@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
@@ -7,73 +6,50 @@
   <title>Página TS4 — Download</title>
   <style>
     :root{
-      --bg1:#2b0f3a; /* deep purple */
-      --bg2:#4b2b6e; /* lighter purple */
-      --accent:#7fe3c7; /* teal-ish */
-      --card:#ffffff10;
-      --glass:#ffffff10;
-      --muted:#dcd6e3;
-      --radius:14px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      --ts4-green:#5CFF8C;
+      --ts4-green-dark:#2EBB52;
+      --ts4-blue:#00A2FF;
+      --ts4-bg:#1b2838;
+      --card:#ffffff15;
+      --muted:#e6f7ff;
+      font-family: 'Inter', sans-serif;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0}
+    *{box-sizing:border-box;margin:0;padding:0}
     body{
-      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      background:linear-gradient(135deg,#1b2838,#0f171f);
       color:var(--muted);
+      min-height:100vh;
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:28px;
-      -webkit-font-smoothing:antialiased;
+      padding:30px;
     }
     .wrap{
-      width:100%;max-width:980px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-      border-radius:18px;
-      padding:28px;
-      box-shadow:0 10px 40px rgba(10,10,10,0.4);
-      display:grid;grid-template-columns:260px 1fr;gap:20px;align-items:center;
-      border:1px solid rgba(255,255,255,0.04);
+      width:100%;max-width:900px;
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:20px;
+      box-shadow:0 20px 45px rgba(0,0,0,0.4);
+      display:grid;grid-template-columns:260px 1fr;
+      gap:20px;padding:28px;
     }
-    .left{
-      display:flex;flex-direction:column;align-items:center;gap:18px;padding:12px;
-    }
-    .plumbob{
-      width:160px;height:160px;display:grid;place-items:center;
-      filter:drop-shadow(0 12px 22px rgba(0,0,0,0.5));
-    }
-    h1{font-size:22px;margin:0;color:#fff}
-    p.lead{margin:6px 0 0;color:rgba(255,255,255,0.85)}
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-      padding:14px;border-radius:12px;width:100%;text-align:center;border:1px solid rgba(255,255,255,0.03)
-    }
-    .meta{font-size:13px;color:rgba(255,255,255,0.7);margin-top:6px}
-    .actions{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:10px}
-    .btn{
-      padding:12px 18px;border-radius:12px;border:0;cursor:pointer;font-weight:600;
-      background:linear-gradient(180deg,var(--accent),#56cbb4);color:#04302a
-    }
-    .btn.ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.06)}
-    .right{padding:8px}
-    .desc{background:rgba(0,0,0,0.18);padding:14px;border-radius:12px;margin-bottom:14px}
-    .small{font-size:13px;color:rgba(255,255,255,0.75)}
-    pre{background:rgba(255,255,255,0.03);padding:12px;border-radius:10px;overflow:auto;color:var(--muted);font-size:13px}
-    .linkBox{display:flex;gap:8px;align-items:center}
-    input[type=text]{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--muted)}
-    footer{grid-column:1/-1;margin-top:8px;font-size:12px;color:rgba(255,255,255,0.55);text-align:center}
-    @media (max-width:760px){
-      .wrap{grid-template-columns:1fr;}
-      .plumbob{width:120px;height:120px}
-    }
+    .left{display:flex;flex-direction:column;align-items:center;gap:18px;}
+    .plumbob{width:160px;height:160px;filter:drop-shadow(0 12px 22px rgba(0,0,0,0.6));}
+    h1{color:white;font-size:26px;text-shadow:0 4px 10px rgba(0,0,0,0.4);}
+    .card{background:rgba(255,255,255,0.05);padding:18px;border-radius:14px;text-align:center;border:1px solid rgba(255,255,255,0.08);}
+    .meta{color:#cdeaff;font-size:14px;margin-top:6px;}
+    .right{padding:5px;}
+    .desc{background:rgba(255,255,255,0.06);padding:16px;border-radius:14px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.07);} 
+    a{color:var(--ts4-green);font-weight:600;}
+    a:hover{color:var(--ts4-green-dark);} 
+    footer{text-align:center;color:#9ab7c9;font-size:13px;margin-top:6px;}
+    @media(max-width:760px){.wrap{grid-template-columns:1fr;}.plumbob{width:120px;height:120px}}
   </style>
 </head>
 <body>
   <div class="wrap" role="main">
     <div class="left">
       <div class="plumbob" aria-hidden>
-        <!-- simple plumbob SVG inspired shape -->
         <svg viewBox="0 0 100 140" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="g" x1="0" x2="1">
@@ -89,204 +65,23 @@
       </div>
       <div class="card">
         <h1>The Sims 4 — Conteúdo</h1>
-        <p class="meta">Página de download com tema TS4. Design responsivo e botão pronto para o link do GoFile.</p>
-        <div class="actions">
-          <button class="btn" id="downloadBtn">Baixar agora</button>
-          <button class="btn ghost" id="copyBtn">Copiar link</button>
-        </div>
+        <p class="meta">Downloads das DLCs separadas em .zip, organizadas por nome.</p>
       </div>
-    </div><div class="right">
-  <div class="desc">
-    <p class="small">Use o botão <strong>Baixar agora</strong> para abrir o link do GoFile. Você pode substituir o link padrão no campo abaixo pelo seu link de download do GoFile.</p>
-  </div>
+    </div>
 
-  <div class="desc" style="margin-bottom:12px">
-    <p class="small">Link do GoFile: <a href="https://gofile.io/d/SEU_LINK_AQUI" id="gofileLink" target="_blank" style="color: var(--accent); text-decoration: underline;">https://gofile.io/d/SEU_LINK_AQUI</a></p>
-  </div>
-
-  <div class="card" style="padding:12px">
-    <strong class="small">Detalhes</strong>
-    <pre>// Dica: substitua o valor do input acima pelo link direto do GoFile (por ex. https://gofile.io/d/abcd1234)
-
-// Se quiser que eu já insira seu link, cole aqui e eu atualizo a página. </pre> </div>
-
-<footer>
-    Feito com ❤️ por você — tema inspirado em The Sims 4. Use apenas conteúdo que você tem autorização para distribuir.
-  </footer>
-</div>
-
-  </div>  <script>
-    const downloadBtn = document.getElementById('downloadBtn');
-    const copyBtn = document.getElementById('copyBtn');
-    const openLink = document.getElementById('openLink');
-    const input = document.getElementById('gofileLink');
-
-    function sanitizeUrl(url){
-      try{
-        const u = new URL(url);
-        return u.href;
-      }catch(e){
-        return null;
-      }
-    }
-
-    downloadBtn.addEventListener('click', ()=>{
-      const valid = sanitizeUrl(input.value);
-      if(valid) window.open(valid, '_blank');
-      else alert('Link inválido. Por favor coloque um link do GoFile começando com https://');
-    });
-
-    openLink.addEventListener('click', ()=>{
-      const valid = sanitizeUrl(input.value);
-      if(valid) window.open(valid, '_blank');
-      else alert('Link inválido.');
-    });
-
-    copyBtn.addEventListener('click', async ()=>{
-      const val = input.value;
-      try{
-        await navigator.clipboard.writeText(val);
-        copyBtn.textContent = 'Copiado!';
-        setTimeout(()=>copyBtn.textContent = 'Copiar link',1200);
-      }catch(e){
-        alert('Não foi possível copiar — copie manualmente: ' + val);
-      }
-    });
-
-    // keyboard shortcut: Ctrl/Cmd+D opens link
-    document.addEventListener('keydown', (e)=>{
-      if((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==='d'){
-        e.preventDefault();
-        downloadBtn.click();
-      }
-    });
-  </script></body>
-</html>      border:1px solid rgba(255,255,255,0.04);
-    }
-    .left{
-      display:flex;flex-direction:column;align-items:center;gap:18px;padding:12px;
-    }
-    .plumbob{
-      width:160px;height:160px;display:grid;place-items:center;
-      filter:drop-shadow(0 12px 22px rgba(0,0,0,0.5));
-    }
-    h1{font-size:22px;margin:0;color:#fff}
-    p.lead{margin:6px 0 0;color:rgba(255,255,255,0.85)}
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-      padding:14px;border-radius:12px;width:100%;text-align:center;border:1px solid rgba(255,255,255,0.03)
-    }
-    .meta{font-size:13px;color:rgba(255,255,255,0.7);margin-top:6px}
-    .actions{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:10px}
-    .btn{
-      padding:12px 18px;border-radius:12px;border:0;cursor:pointer;font-weight:600;
-      background:linear-gradient(180deg,var(--accent),#56cbb4);color:#04302a
-    }
-    .btn.ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.06)}
-    .right{padding:8px}
-    .desc{background:rgba(0,0,0,0.18);padding:14px;border-radius:12px;margin-bottom:14px}
-    .small{font-size:13px;color:rgba(255,255,255,0.75)}
-    pre{background:rgba(255,255,255,0.03);padding:12px;border-radius:10px;overflow:auto;color:var(--muted);font-size:13px}
-    .linkBox{display:flex;gap:8px;align-items:center}
-    input[type=text]{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--muted)}
-    footer{grid-column:1/-1;margin-top:8px;font-size:12px;color:rgba(255,255,255,0.55);text-align:center}
-    @media (max-width:760px){
-      .wrap{grid-template-columns:1fr;}
-      .plumbob{width:120px;height:120px}
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap" role="main">
-    <div class="left">
-      <div class="plumbob" aria-hidden>
-        <!-- simple plumbob SVG inspired shape -->
-        <svg viewBox="0 0 100 140" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="g" x1="0" x2="1">
-              <stop offset="0" stop-color="#9af3d6" />
-              <stop offset="1" stop-color="#4ad1b3" />
-            </linearGradient>
-          </defs>
-          <g transform="translate(50,10)">
-            <path d="M0 -6 L18 36 L0 60 L-18 36 Z" fill="url(#g)" stroke="#007a66" stroke-width="1"/>
-            <path d="M0 66 L14 110 L0 125 L-14 110 Z" fill="rgba(0,0,0,0.06)" />
-          </g>
-        </svg>
+    <div class="right">
+      <div class="desc">
+        <p class="small">Download de todas as DLCs separadas em arquivo .zip e com nome das DLCs:</p>
+        <p class="small"><a href="https://gofile.io/d/gn6fyK" target="_blank" style="color: var(--accent); text-decoration: underline;">Clique aqui para acessar o GoFile</a></p>
       </div>
-      <div class="card">
-        <h1>The Sims 4 — Conteúdo</h1>
-        <p class="meta">Página de download com tema TS4. Design responsivo e botão pronto para o link do GoFile.</p>
-        <div class="actions">
-          <button class="btn" id="downloadBtn">Baixar agora</button>
-          <button class="btn ghost" id="copyBtn">Copiar link</button>
-        </div>
-      </div>
-    </div><div class="right">
-  <div class="desc">
-    <p class="small">Use o botão <strong>Baixar agora</strong> para abrir o link do GoFile. Você pode substituir o link padrão no campo abaixo pelo seu link de download do GoFile.</p>
+
+      <footer> ;)</footer>
+    </div>
   </div>
 
-  <label class="small">Link do GoFile</label>
-  <div class="linkBox" style="margin-bottom:12px">
-    <input type="text" id="gofileLink" value="https://gofile.io/d/gn6fyK" aria-label="link do gofile" />
-    <button class="btn" id="openLink">Abrir</button>
-  </div>
-
-  <div class="card" style="padding:12px">
-    <pre>// Dica: substitua o valor do input acima pelo link direto do GoFile (por ex. https://gofile.io/d/abcd1234)
-
-// Se quiser que eu já insira seu link, cole aqui e eu atualizo a página. </pre> </div>
-
-<footer>
-    Feito com ❤️ por você — tema inspirado em The Sims 4. Use apenas conteúdo que você tem autorização para distribuir.
-  </footer>
-</div>
-
-  </div>  <script>
-    const downloadBtn = document.getElementById('downloadBtn');
-    const copyBtn = document.getElementById('copyBtn');
-    const openLink = document.getElementById('openLink');
-    const input = document.getElementById('gofileLink');
-
-    function sanitizeUrl(url){
-      try{
-        const u = new URL(url);
-        return u.href;
-      }catch(e){
-        return null;
-      }
-    }
-
-    downloadBtn.addEventListener('click', ()=>{
-      const valid = sanitizeUrl(input.value);
-      if(valid) window.open(valid, '_blank');
-      else alert('Link inválido. Por favor coloque um link do GoFile começando com https://');
-    });
-
-    openLink.addEventListener('click', ()=>{
-      const valid = sanitizeUrl(input.value);
-      if(valid) window.open(valid, '_blank');
-      else alert('Link inválido.');
-    });
-
-    copyBtn.addEventListener('click', async ()=>{
-      const val = input.value;
-      try{
-        await navigator.clipboard.writeText(val);
-        copyBtn.textContent = 'Copiado!';
-        setTimeout(()=>copyBtn.textContent = 'Copiar link',1200);
-      }catch(e){
-        alert('Não foi possível copiar — copie manualmente: ' + val);
-      }
-    });
-
-    // keyboard shortcut: Ctrl/Cmd+D opens link
-    document.addEventListener('keydown', (e)=>{
-      if((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==='d'){
-        e.preventDefault();
-        downloadBtn.click();
-      }
-    });
-  </script></body>
+<script>
+// Nenhum botão — script simplificado
+console.log("Página carregada sem botões de ação.");
+</script>
+</body>
 </html>
